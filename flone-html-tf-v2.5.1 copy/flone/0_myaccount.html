@@ -49,7 +49,7 @@
                                 <li><a href="#">Riyal (SAR) </a></li>
                                 <li><a href="#">Rupee (INR)  </a></li>
                                 <li><a href="#">Dirham (AED) </a></li>
-                                <li><a href="#">USD (AED) </a></li>
+                                <li><a href="#">USD </a></li>
                             </ul>
                         </div>
                     </div>
@@ -195,8 +195,8 @@
                                     <li><a href="0_login.html">로그인</a></li>
                                     <li><a href="0_register.html">회원가입</a></li>
                                     <li><a href="0_wishlist.html">찜 목록  </a></li>
-                                    <li><a href="0_cart.html">장바구니  </a></li>
-                                    <!-- <li><a href="0_myaccount.html">내 정보</a></li> -->
+                                    <li><a href="0_cart.html">장바구니</a></li>
+                                    <li><a href="0_myaccount.html">내 정보</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -207,7 +207,7 @@
                 <div class="mobile-menu">
                     <nav id="mobile-menu-active">
                         <ul class="menu-overflow">
-                            <li><a href="0_index.html">HOME</a>
+                            <li><a href="0_index.html">홈</a>
                                 <ul>
                                     <li><a href="#">Demo Group 01</a>
                                         <ul>
@@ -256,7 +256,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="0_shop.html">Shop</a>
+                            <li><a href="shop.html">Shop</a>
                                 <ul>
                                     <li><a href="#">shop layout</a>
                                         <ul>
@@ -322,55 +322,140 @@
         <div class="breadcrumb-content text-center">
             <ul>
                 <li>
-                    <a href="index.html">홈</a>
+                    <a href="0_index.html">홈</a>
                 </li>
-                <li class="active">
-                    <a href="0_login.html">로그인</a>
-                </li>
-                <li class="active">
-                    <a href="0_register.html">회원가입</a>
-                </li>
+                <li class="active">내 계정 </li>
             </ul>
         </div>
     </div>
 </div>
-<div class="login-register-area pt-100 pb-100">
+<div class="checkout-area pb-80 pt-100">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 col-md-12 ms-auto me-auto">
-                <div class="login-register-wrapper">
-                    <div class="login-register-tab-list nav">
-                        <a class="active" data-bs-toggle="tab" href="#lg1">
-                            <h4> 로그인 </h4>
-                        </a>
-                    </div>
-                    <div class="tab-content">
-                        <div id="lg1" class="tab-pane active">
-                            <div class="login-form-container">
-                                <div class="login-register-form">
-                                    <form action="#" method="post">
-                                        <div class="was-validated">
-											<label for="validationCustom01" class="form-label"></label>
-											<input type="text" class="form-control" id="validationCustom01" placeholder="아이디" required="">
-											<div class="valid-feedback"></div>
-										</div>
-                                        <div class="was-validated">
-											<label for="validationCustom01" class="form-label"></label>
-											<input type="password" class="form-control" id="validationCustom01" placeholder="비밀번호" required="">
-											<div class="valid-feedback"></div>
-										</div>
-                                        <div class="button-box">
-                                            <div class="login-toggle-btn">
-                                                <input type="checkbox">
-                                                <label>로그인 정보 저장</label>
-                                                <a href="#">비밀번호 찾기</a>
-                                                <a href="#">아이디 찾기/</a>
-                                                <a href="0_register.html">회원가입/</a>
-                                            </div>
-                                            <button type="submit"><span>로그인</span></button>
+            <div class="ms-auto me-auto col-lg-9">
+                <div class="checkout-wrapper">
+                    <div id="faq" class="panel-group">
+                        <div class="panel panel-default single-my-account">
+                            <div class="panel-heading my-account-title">
+                                <h3 class="panel-title"><span>1 .</span> <a data-bs-toggle="collapse" href="#my-account-1">내 계정 </a></h3>
+                            </div>
+                            <div id="my-account-1" class="panel-collapse collapse show" data-bs-parent="#faq">
+                                <div class="panel-body">
+                                    <div class="myaccount-info-wrapper">
+                                        <div class="account-info-wrapper">
+                                            <h4>내 계정 정보</h4>
+                                            <h5>귀하의 개인 정보</h5>
                                         </div>
-                                    </form>
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="billing-info">
+                                                    <label>이름</label>
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="billing-info">
+                                                    <label>이메일 주소</label>
+                                                    <input type="email">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="billing-info">
+                                                    <label>전화번호</label>
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="billing-back-btn">
+                                            <div class="billing-back">
+                                                <a href="#"><i class="fa fa-arrow-up"></i> 뒤로</a>
+                                            </div>
+                                            <div class="billing-btn">
+                                                <button type="submit">계속</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default single-my-account">
+                            <div class="panel-heading my-account-title">
+                                <h3 class="panel-title"><span>2 .</span> <a data-bs-toggle="collapse" href="#my-account-2">비밀번호 변경 </a></h3>
+                            </div>
+                            <div id="my-account-2" class="panel-collapse collapse" data-bs-parent="#faq">
+                                <div class="panel-body">
+                                    <div class="myaccount-info-wrapper">
+                                        <div class="account-info-wrapper">
+                                            <h4>비밀번호 변경</h4>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="billing-info">
+                                                    <label>비밀번호</label>
+                                                    <input type="password">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="billing-info">
+                                                    <label>비밀번호 확인</label>
+                                                    <input type="password">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="billing-back-btn">
+                                            <div class="billing-back">
+                                                <a href="#"><i class="fa fa-arrow-up"></i> 뒤로</a>
+                                            </div>
+                                            <div class="billing-btn">
+                                                <button type="submit">계속</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default single-my-account">
+                            <div class="panel-heading my-account-title">
+                                <h3 class="panel-title"><span>3 .</span> <a data-bs-toggle="collapse" href="#my-account-3">내 주소록   </a></h3>
+                            </div>
+                            <div id="my-account-3" class="panel-collapse collapse" data-bs-parent="#faq">
+                                <div class="panel-body">
+                                    <div class="myaccount-info-wrapper">
+                                        <div class="account-info-wrapper">
+                                            <h4>주소록</h4>
+                                        </div>
+                                        <div class="entries-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+                                                    <div class="entries-info text-center">
+                                                        <p>이상언 </p>
+                                                        <p>  서울특별시 중랑구 용마산로 670 </p>
+                                                        <p> 203동 1603호 </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+                                                    <div class="entries-edit-delete text-center">
+                                                        <a class="edit" href="#">Edit</a>
+                                                        <a href="#">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="billing-back-btn">
+                                            <div class="billing-back">
+                                                <a href="#"><i class="fa fa-arrow-up"></i> 뒤로</a>
+                                            </div>
+                                            <div class="billing-btn">
+                                                <button type="submit">계속</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default single-my-account">
+                            <div class="panel-heading my-account-title">
+                                <h3 class="panel-title"><span>4 .</span> <a href="0_wishlist.html">내 찜 목록   </a></h3>
                             </div>
                         </div>
                     </div>
@@ -378,7 +463,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> 
 <footer class="footer-area bg-gray pt-100 pb-70">
     <div class="container">
         <div class="row">
